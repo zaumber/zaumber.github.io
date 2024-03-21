@@ -1,0 +1,92 @@
+
+:root{
+    --bg: linear-gradient(to top,#010329,#000005);
+    --glassClr: linear-gradient(to left, #142544, #1a9092);
+    --wateClr: linear-gradient(to left, #142544,#1b6d6e);
+    --grass: linear-gradient(to left, #0b5304,#25b109);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+header {
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    color: #dd11aa; /* Cambia el color del texto según tus preferencias */
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Ajusta el padding según tus preferencias */
+}
+
+.contenedor-titulo {
+    display: flex;
+    justify-content: absolute; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea arriba verticalmente */
+    height: 200%; /* Establece la altura del contenedor */
+}
+
+h1 {
+    font-size: 36px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+body{
+    background-image: var(--bg);
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+.container::before{
+    content: '';
+    width: 70px;
+    height: 250px;
+    border-radius: 50%;
+    border-left: 15px solid green;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 58%;
+    left: 49%;
+}
+
+.container::after{
+    content: '';
+    width:90px;
+    height:60px;
+    border-radius: 50%;
+    border-bottom: 20px solid transparent;
+    border-top: 24px solid green;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+.point {
+  width: 100px;
+  height: 100px;
+  background: #f4e236;
+  background:linear-gradient(180deg, rgba(244,226,54,1) 0%, rgb(184, 166, 0) 100%);
+  position: absolute;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius:0px ;
+  border-bottom-right-radius: 200px;
+  border-top-left-radius: 200px;
+} 
